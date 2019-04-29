@@ -12,11 +12,8 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
-=======
         print("ngehe")
         print("ngihuyyy")
->>>>>>> 36b48032484a630c9784c0213fc5c32e86bd2c18
         // Do any additional setup after loading the view.
     }
 
