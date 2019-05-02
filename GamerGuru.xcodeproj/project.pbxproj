@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */; };
+		58A86AE5227AE5D1009867A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A86AE4227AE5D1009867A8 /* CollectionViewCell.swift */; };
 		9579EC0F2276EBA900828865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC0E2276EBA900828865 /* AppDelegate.swift */; };
 		9579EC112276EBA900828865 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC102276EBA900828865 /* HomeViewController.swift */; };
 		9579EC132276EBA900828865 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC122276EBA900828865 /* GuideViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		58A86AE4227AE5D1009867A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9579EC0B2276EBA900828865 /* GamerGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9579EC0E2276EBA900828865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9579EC102276EBA900828865 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				9579EC172276EBAA00828865 /* Assets.xcassets */,
 				9579EC192276EBAA00828865 /* LaunchScreen.storyboard */,
 				9579EC1C2276EBAA00828865 /* Info.plist */,
+				58A86AE4227AE5D1009867A8 /* CollectionViewCell.swift */,
 			);
 			path = GamerGuru;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A86AE5227AE5D1009867A8 /* CollectionViewCell.swift in Sources */,
 				9579EC132276EBA900828865 /* GuideViewController.swift in Sources */,
 				1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */,
 				9579EC0F2276EBA900828865 /* AppDelegate.swift in Sources */,
