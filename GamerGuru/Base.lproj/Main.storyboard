@@ -124,6 +124,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="logoImage" destination="vZz-8Q-Xfi" id="WQ0-sk-lAd"/>
+                                            <segue destination="rEt-59-qlR" kind="show" id="lU5-T2-DJR"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -148,14 +149,87 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Guides" id="asY-jk-FLY"/>
+                    <navigationItem key="navigationItem" title="Guides" id="asY-jk-FLY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="tvl-2p-XdK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionGame" destination="AqU-7P-Ys3" id="LtX-Lq-VMI"/>
+                        <outlet property="searchGuide" destination="2OO-Mo-prw" id="FfL-jb-ciy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1725.5999999999999" y="-666.11694152923542"/>
+        </scene>
+        <!--Guide Screen View Controller-->
+        <scene sceneID="Usn-4m-DhW">
+            <objects>
+                <viewController id="rEt-59-qlR" customClass="GuideScreenViewController" customModule="GamerGuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhL-Ij-XSL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8oK-fh-BuP">
+                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <color key="barTintColor" red="0.97647982835769653" green="0.97645872831344604" blue="0.97646290063858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zC2-Be-POu">
+                                <rect key="frame" x="0.0" y="196" width="414" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="guideTableItem" rowHeight="91" id="eeQ-qN-PdU" customClass="GuideContentTableViewCell" customModule="GamerGuru" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="91"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eeQ-qN-PdU" id="ycT-vu-DdR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-Qx-aig">
+                                                    <rect key="frame" x="214" y="0.0" width="200" height="91"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MO-4z-WDB">
+                                                    <rect key="frame" x="20" y="23" width="374" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellBackground" destination="YmF-Qx-aig" id="W7I-oZ-wBd"/>
+                                            <outlet property="guideTopic" destination="1MO-4z-WDB" id="t6S-C8-duL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rEt-59-qlR" id="vWD-nE-Kru"/>
+                                    <outlet property="delegate" destination="rEt-59-qlR" id="aK7-nH-sld"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iTz-N6-Bva" firstAttribute="trailing" secondItem="zC2-Be-POu" secondAttribute="trailing" id="5aE-MH-mRb"/>
+                            <constraint firstItem="8oK-fh-BuP" firstAttribute="trailing" secondItem="iTz-N6-Bva" secondAttribute="trailing" id="LBw-77-XZG"/>
+                            <constraint firstItem="8oK-fh-BuP" firstAttribute="top" secondItem="iTz-N6-Bva" secondAttribute="top" id="b6s-Zl-IXe"/>
+                            <constraint firstItem="zC2-Be-POu" firstAttribute="leading" secondItem="iTz-N6-Bva" secondAttribute="leading" id="bhb-Kz-vZl"/>
+                            <constraint firstItem="8oK-fh-BuP" firstAttribute="leading" secondItem="iTz-N6-Bva" secondAttribute="leading" id="qOo-Hk-nTe"/>
+                            <constraint firstItem="zC2-Be-POu" firstAttribute="top" secondItem="8oK-fh-BuP" secondAttribute="bottom" id="zHj-ch-Ud4"/>
+                            <constraint firstItem="iTz-N6-Bva" firstAttribute="bottom" secondItem="zC2-Be-POu" secondAttribute="bottom" id="zsc-ZJ-mAH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iTz-N6-Bva"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentTable" destination="zC2-Be-POu" id="zr0-gH-rtg"/>
+                        <outlet property="searchContent" destination="8oK-fh-BuP" id="Wkf-HI-pdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTy-Mq-jNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689.8550724637685" y="-666.29464285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

@@ -10,11 +10,15 @@ import UIKit
 
 class GuideViewController: UIViewController {
 
+    @IBOutlet weak var searchGuide: UISearchBar!
     @IBOutlet weak var collectionGame: UICollectionView!
     var gameName:[String] = ["Dota 2", "CS-GO", "PUBG", "Fortnite", "APEX", "Crossfire"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        searchGuide.setBackgroundImage(UIImage(), for: .top, barMetrics: .default)
+        searchGuide.backgroundColor = #colorLiteral(red: 0.9763886333, green: 0.9765250087, blue: 0.9763454795, alpha: 1)
     }
 }
 
