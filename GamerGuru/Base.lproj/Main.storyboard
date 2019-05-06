@@ -111,22 +111,22 @@
                                                                     <rect key="frame" x="157" y="0.0" width="142" height="173"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="W9k-KR-0fO">
-                                                                            <rect key="frame" x="13.5" y="44.5" width="115" height="84"/>
+                                                                            <rect key="frame" x="14" y="45" width="114" height="83"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabian Tayo  Vieri" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-4J-MjB">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="41"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Fabian Tayo  Vieri" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-4J-MjB">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="41"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game : Fortnite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWY-wO-f3E">
-                                                                                    <rect key="frame" x="0.0" y="43" width="115" height="16"/>
+                                                                                    <rect key="frame" x="0.0" y="43" width="114" height="15"/>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <view contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="WQp-6d-aMA" customClass="CosmosView" customModule="GamerGuru" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="61" width="115" height="23"/>
+                                                                                <view contentMode="bottom" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="WQp-6d-aMA" customClass="CosmosView" customModule="GamerGuru" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="60" width="114" height="23"/>
                                                                                     <userDefinedRuntimeAttributes>
                                                                                         <userDefinedRuntimeAttribute type="number" keyPath="rating">
                                                                                             <real key="value" value="4"/>
@@ -155,6 +155,8 @@
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
+                                                                        <constraint firstItem="W9k-KR-0fO" firstAttribute="top" secondItem="kf0-8w-hGA" secondAttribute="top" constant="45" id="HeH-mP-yjJ"/>
+                                                                        <constraint firstItem="W9k-KR-0fO" firstAttribute="leading" secondItem="kf0-8w-hGA" secondAttribute="leading" constant="14" id="sT3-20-WwZ"/>
                                                                         <constraint firstItem="W9k-KR-0fO" firstAttribute="centerY" secondItem="kf0-8w-hGA" secondAttribute="centerY" id="swc-ra-Hr0"/>
                                                                         <constraint firstItem="W9k-KR-0fO" firstAttribute="centerX" secondItem="kf0-8w-hGA" secondAttribute="centerX" id="zy7-uc-GTY"/>
                                                                     </constraints>
