@@ -1,20 +1,21 @@
 //
-//  CoachViewController.swift
+//  testViewController.swift
 //  GamerGuru
 //
-//  Created by Fabian Vieri Pasulle on 29/04/19.
+//  Created by Ananda Kevin Refaldo Sariputra on 03/05/19.
 //  Copyright © 2019 Ananda Kevin Refaldo Sariputra. All rights reserved.
 //
 
 import UIKit
 
-class CoachViewController: UIViewController {
+class testViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation

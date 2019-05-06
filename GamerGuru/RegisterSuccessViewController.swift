@@ -1,20 +1,25 @@
 //
-//  CoachViewController.swift
+//  RegisterSuccessViewController.swift
 //  GamerGuru
 //
-//  Created by Fabian Vieri Pasulle on 29/04/19.
+//  Created by Ananda Kevin Refaldo Sariputra on 06/05/19.
 //  Copyright © 2019 Ananda Kevin Refaldo Sariputra. All rights reserved.
 //
 
 import UIKit
 
-class CoachViewController: UIViewController {
+class RegisterSuccessViewController: UIViewController {
 
+    @IBOutlet weak var successImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let image = UIImage(named: "successBtn") else {
+            return
+        }
+        successImage.image = image
         // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation
