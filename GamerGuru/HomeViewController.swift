@@ -23,7 +23,11 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         configView()
+=======
+        // Do any additional setup after loading the view.
+>>>>>>> master
     }
     
     func configView() {
