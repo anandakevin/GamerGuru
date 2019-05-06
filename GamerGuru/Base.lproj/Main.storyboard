@@ -75,27 +75,27 @@
                                         <rect key="frame" x="0.0" y="41" width="414" height="200.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vQm-dm-2e4">
-                                            <size key="itemSize" width="276" height="173"/>
+                                            <size key="itemSize" width="319" height="173"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CoachCell" id="oUw-PG-pip" customClass="ImageCollectionViewCell" customModule="GamerGuru" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="14" width="276" height="173"/>
+                                                <rect key="frame" x="0.0" y="14" width="319" height="173"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="276" height="173"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="173"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ip3-gW-wmr">
-                                                            <rect key="frame" x="20" y="0.0" width="256" height="173"/>
+                                                            <rect key="frame" x="20" y="0.0" width="299" height="173"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-8w-hGA" userLabel="textSection">
-                                                                    <rect key="frame" x="135.5" y="0.0" width="120.5" height="173"/>
+                                                                    <rect key="frame" x="157" y="0.0" width="142" height="173"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="W9k-KR-0fO">
-                                                                            <rect key="frame" x="3" y="44.5" width="115" height="84"/>
+                                                                            <rect key="frame" x="13.5" y="44.5" width="115" height="84"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabian Tayo  Vieri" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-4J-MjB">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="115" height="41"/>
@@ -144,7 +144,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sdu-5x-Udd">
-                                                                    <rect key="frame" x="10" y="10" width="120.5" height="153"/>
+                                                                    <rect key="frame" x="10" y="10" width="142" height="153"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.76862745098039209" green="0.63529411764705879" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -167,7 +167,7 @@
                                                     <constraint firstItem="Ip3-gW-wmr" firstAttribute="leading" secondItem="oUw-PG-pip" secondAttribute="leading" constant="20" id="NM3-gF-XRO"/>
                                                     <constraint firstItem="Ip3-gW-wmr" firstAttribute="top" secondItem="oUw-PG-pip" secondAttribute="top" id="pGX-1P-vXc"/>
                                                 </constraints>
-                                                <size key="customSize" width="276" height="173"/>
+                                                <size key="customSize" width="319" height="173"/>
                                                 <connections>
                                                     <outlet property="coachImage" destination="Sdu-5x-Udd" id="jKA-qb-WMm"/>
                                                     <outlet property="coachLabelGame" destination="cWY-wO-f3E" id="OqS-LY-xbx"/>
@@ -207,21 +207,21 @@
                                         <rect key="frame" x="0.0" y="41" width="414" height="201"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sB4-MB-UG4">
-                                            <size key="itemSize" width="249" height="168"/>
+                                            <size key="itemSize" width="297" height="173"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="GameCell" id="fXo-pB-DiQ" customClass="ImageCollectionViewCell" customModule="GamerGuru" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="14" width="300" height="173"/>
+                                                <rect key="frame" x="0.0" y="14" width="297" height="173"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="173"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="173"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kT-fb-8CW">
-                                                            <rect key="frame" x="20" y="0.0" width="280" height="173"/>
+                                                            <rect key="frame" x="20" y="0.0" width="277" height="173"/>
                                                             <state key="normal">
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
@@ -234,7 +234,7 @@
                                                     <constraint firstItem="7kT-fb-8CW" firstAttribute="top" secondItem="fXo-pB-DiQ" secondAttribute="top" id="MMd-ct-jkn"/>
                                                     <constraint firstItem="7kT-fb-8CW" firstAttribute="leading" secondItem="fXo-pB-DiQ" secondAttribute="leading" constant="20" id="Zh9-sj-ZGB"/>
                                                 </constraints>
-                                                <size key="customSize" width="300" height="173"/>
+                                                <size key="customSize" width="297" height="173"/>
                                                 <connections>
                                                     <outlet property="gameImage" destination="7kT-fb-8CW" id="WHP-dj-hY2"/>
                                                 </connections>

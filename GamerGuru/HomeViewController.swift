@@ -20,6 +20,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var profileView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        configView()
+    }
+    
+    func configView() {
         
         // profile picture
         profilePicture.image = UIImage(named: "default_icon")
@@ -47,10 +51,6 @@ class HomeViewController: UIViewController {
     
 }
 
-extension UIView {
-    
-}
-
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArr.count
@@ -60,8 +60,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if collectionView == gameColView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! ImageCollectionViewCell
             cell.gameImage.setImage(UIImage(named: imageArr[indexPath.row]), for: .normal)
-            cell.gameImage.layer.cornerRadius = 10
+            
+            cell.gameImage.layer.cornerRadius = 10.0
             cell.gameImage.layer.masksToBounds = true
+            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowOffset = CGSize(width:0,height: 1.0)
+            cell.layer.shadowRadius = 4.0
+            cell.layer.shadowOpacity = 10.0
+            cell.layer.masksToBounds = false
+            
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoachCell", for: indexPath) as! ImageCollectionViewCell
@@ -70,26 +77,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.coachImage.clipsToBounds = true
             cell.coachLabelGame.adjustsFontSizeToFitWidth = true
             
-            cell.mainView.layer.cornerRadius = 10
-            cell.mainView.layer.shadowColor = UIColor.lightGray.cgColor
-            cell.mainView.layer.shadowOffset = CGSize(width:0,height: 1.0)
-            cell.mainView.layer.shadowRadius = 1.0
-            cell.mainView.layer.shadowOpacity = 0.5
-            cell.mainView.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
-            cell.mainView.layer.masksToBounds = false
+            cell.mainView.layer.cornerRadius = 10.0
+            cell.mainView.layer.masksToBounds = true
+            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowOffset = CGSize(width:0,height: 1.0)
+            cell.layer.shadowRadius = 4.0
+            cell.layer.shadowOpacity = 10.0
+            cell.layer.masksToBounds = false
+            
             return cell
         }
         
     }
-    
-    func configCoachCell(_ cell:UICollectionViewCell) -> UICollectionViewCell {
-        
-        cell.layer.cornerRadius = 10
-        cell.layer.masksToBounds = true
-        return cell
-    }
-    
-    
     
 }
 
