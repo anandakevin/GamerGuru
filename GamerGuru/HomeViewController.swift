@@ -23,11 +23,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
         configView()
-=======
-        // Do any additional setup after loading the view.
->>>>>>> master
     }
     
     func configView() {
@@ -54,13 +50,13 @@ class HomeViewController: UIViewController {
         
         // line break 1
         let border = CALayer()
-        border.frame = CGRect(x: 20, y: borderView.frame.size.height, width: borderView.frame.size.width - 40, height: 1)
+        border.frame = CGRect(x: 20, y: borderView.frame.size.height + 39, width: borderView.frame.size.width - 40, height: 1)
         border.backgroundColor = UIColor.black.cgColor
         borderView.layer.addSublayer(border)
         
         // line break 2
         let anotherBorder = CALayer()
-        anotherBorder.frame = CGRect(x: 20, y: profileView.frame.size.height - 1, width: profileView.frame.width - 40, height: 1)
+        anotherBorder.frame = CGRect(x: 20, y: profileView.frame.size.height + 30, width: profileView.frame.width - 40, height: 1)
         anotherBorder.backgroundColor = UIColor.black.cgColor
         profileView.layer.addSublayer(anotherBorder)
         
