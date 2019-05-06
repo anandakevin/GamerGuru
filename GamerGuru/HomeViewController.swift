@@ -18,6 +18,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var borderView: UIView!
     @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
@@ -34,6 +37,16 @@ class HomeViewController: UIViewController {
         // profile button
         profileButton.layer.cornerRadius = 5
         profileButton.layer.masksToBounds = true
+        
+        // login button
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.masksToBounds = true
+        loginButton.isHidden = true
+        
+        // register button
+        registerButton.layer.cornerRadius = 5
+        registerButton.layer.masksToBounds = true
+        registerButton.isHidden = true
         
         // line break 1
         let border = CALayer()
