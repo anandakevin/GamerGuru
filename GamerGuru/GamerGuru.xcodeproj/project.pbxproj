@@ -17,6 +17,8 @@
 		5817B49D227ED48B00979E0C /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817B49C227ED48B00979E0C /* GameCollectionViewCell.swift */; };
 		5817B49F227ED71A00979E0C /* GuideContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817B49E227ED71A00979E0C /* GuideContentViewController.swift */; };
 		5817B4A1227EDCAE00979E0C /* GuideTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817B4A0227EDCAE00979E0C /* GuideTopicTableViewCell.swift */; };
+		5817B4A3227FC8E600979E0C /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817B4A2227FC8E600979E0C /* ContentViewController.swift */; };
+		5817B4A5227FD46F00979E0C /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817B4A4227FD46F00979E0C /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5817B49C227ED48B00979E0C /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		5817B49E227ED71A00979E0C /* GuideContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideContentViewController.swift; sourceTree = "<group>"; };
 		5817B4A0227EDCAE00979E0C /* GuideTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTopicTableViewCell.swift; sourceTree = "<group>"; };
+		5817B4A2227FC8E600979E0C /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		5817B4A4227FD46F00979E0C /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				5817B485227ECDB400979E0C /* AppDelegate.swift */,
 				5817B487227ECDB400979E0C /* ViewController.swift */,
 				5817B489227ECDB400979E0C /* Main.storyboard */,
+				5817B4A4227FD46F00979E0C /* PopUpViewController.swift */,
+				5817B4A2227FC8E600979E0C /* ContentViewController.swift */,
 				5817B49E227ED71A00979E0C /* GuideContentViewController.swift */,
 				5817B4A0227EDCAE00979E0C /* GuideTopicTableViewCell.swift */,
 				5817B49A227ED13200979E0C /* GuideViewController.swift */,
@@ -150,12 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5817B4A3227FC8E600979E0C /* ContentViewController.swift in Sources */,
 				5817B49F227ED71A00979E0C /* GuideContentViewController.swift in Sources */,
 				5817B488227ECDB400979E0C /* ViewController.swift in Sources */,
 				5817B49D227ED48B00979E0C /* GameCollectionViewCell.swift in Sources */,
 				5817B49B227ED13200979E0C /* GuideViewController.swift in Sources */,
 				5817B4A1227EDCAE00979E0C /* GuideTopicTableViewCell.swift in Sources */,
 				5817B486227ECDB400979E0C /* AppDelegate.swift in Sources */,
+				5817B4A5227FD46F00979E0C /* PopUpViewController.swift in Sources */,
 				5817B48E227ECDB400979E0C /* GamerGuru.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

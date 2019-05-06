@@ -12,6 +12,7 @@ class GuideContentViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var contentTable: UITableView!
+    let topicImage:[String] = ["maps", "crep", "spec", "item", "build"]
     let topicTitle:[String] = ["Map", "Creep and Jungle", "Heroes", "Items", "Item Build for Heroes"]
     
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ extension GuideContentViewController : UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = (contentTable.dequeueReusableCell(withIdentifier: "contentCell", for: indexPath) as? GuideTopicTableViewCell)!
         cell.cellTitle.text = topicTitle[indexPath.row]
+        cell.cellBackground.image = UIImage(named: topicImage[indexPath.row])
         return cell
     }
     
