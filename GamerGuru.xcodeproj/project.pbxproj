@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */; };
+		1CEA6CFA228143F90008EAEB /* logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CEA6CF9228143F80008EAEB /* logo1.jpg */; };
 		1CF35E58227C24D3003E17F4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */; };
 		1CF35E5A227EC269003E17F4 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF35E59227EC269003E17F4 /* CosmosDistrib.swift */; };
 		95596CF5227FD21F00B43223 /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95596CF4227FD21F00B43223 /* RegisterSuccessViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		1CEA6CF9228143F80008EAEB /* logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo1.jpg; path = ../../../Downloads/logo1.jpg; sourceTree = "<group>"; };
 		1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		1CF35E59227EC269003E17F4 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDistrib.swift; path = "../../../Downloads/Cosmos-master/Distrib/CosmosDistrib.swift"; sourceTree = "<group>"; };
 		95596CF4227FD21F00B43223 /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				9579EC172276EBAA00828865 /* Assets.xcassets */,
 				9579EC192276EBAA00828865 /* LaunchScreen.storyboard */,
 				9579EC1C2276EBAA00828865 /* Info.plist */,
+				1CEA6CF9228143F80008EAEB /* logo1.jpg */,
 				1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */,
 			);
 			path = GamerGuru;
@@ -249,6 +252,7 @@
 			files = (
 				9579EC1B2276EBAA00828865 /* LaunchScreen.storyboard in Resources */,
 				9579EC182276EBAA00828865 /* Assets.xcassets in Resources */,
+				1CEA6CFA228143F90008EAEB /* logo1.jpg in Resources */,
 				9579EC162276EBA900828865 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

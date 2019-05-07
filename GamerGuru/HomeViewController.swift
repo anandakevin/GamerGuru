@@ -10,8 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var imageArr = ["testImage","testImage","testImage","testImage","testImage","testImage","testImage"]
-    var coachImageArr = ["coach","coach","coach","coach","coach","coach","coach","coach"]
+    var gameImage = ["game1","game2","game3","game4","game5","game6","game7"]
+    var coachImageArr = ["coach","coach3","coach2","coach3","coach4","coach2","coach","coach4"]
+    var coachName = ["Fabian Vieri", "Hedianto", "Victor Wijaya", "Farico Novenio", "Chia Pingky", "Ananda Kevin", "Heinrich Reagan"]
+    var coachGame = ["Fortnite", "PUBG", "CS:GO", "DOTA 2", "APEX", "CROSSFIRE", "OVERWATCH"]
+    var coachRating: [Double] = [4.0,5.0,3.0,4.0,3.0,3.0,4.0]
 
     @IBOutlet weak var gameColView: UICollectionView!
     @IBOutlet weak var profileButton: UIButton!
@@ -31,7 +34,8 @@ class HomeViewController: UIViewController {
         // profile picture
         profilePicture.image = UIImage(named: "default_icon")
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
-        profilePicture.layer.borderWidth = 1
+        profilePicture.layer.borderWidth = 0
+        //profilePicture.layer.backgroundColor = UIColor.lightGray.cgColor
         profilePicture.clipsToBounds = true
         
         // profile button
@@ -52,12 +56,12 @@ class HomeViewController: UIViewController {
         let border = CALayer()
         border.frame = CGRect(x: 20, y: borderView.frame.size.height + 39, width: borderView.frame.size.width - 40, height: 1)
         border.backgroundColor = UIColor.black.cgColor
-        borderView.layer.addSublayer(border)
+        //borderView.layer.addSublayer(border)
         
         // line break 2
         let anotherBorder = CALayer()
-        anotherBorder.frame = CGRect(x: 20, y: profileView.frame.size.height + 30, width: profileView.frame.width - 40, height: 1)
-        anotherBorder.backgroundColor = UIColor.black.cgColor
+        anotherBorder.frame = CGRect(x: 0, y: profileView.frame.size.height + 30, width: profileView.frame.width, height: 1)
+        anotherBorder.backgroundColor = UIColor.lightGray.cgColor
         profileView.layer.addSublayer(anotherBorder)
         
     }
@@ -66,14 +70,13 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArr.count
+        return gameImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == gameColView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! ImageCollectionViewCell
-            cell.gameImage.setImage(UIImage(named: imageArr[indexPath.row]), for: .normal)
-            
+            cell.gameImage.setImage(UIImage(named: gameImage[indexPath.row]), for: .normal)
             cell.gameImage.layer.cornerRadius = 10.0
             cell.gameImage.layer.masksToBounds = true
             cell.layer.shadowColor = UIColor.black.cgColor
@@ -86,6 +89,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoachCell", for: indexPath) as! ImageCollectionViewCell
             cell.coachImage.image = UIImage(named: coachImageArr[indexPath.row])
+            cell.coachLabelName.text = coachName[indexPath.row]
+            cell.coachLabelGame.text = coachGame[indexPath.row]
+            cell.coachRating.rating = coachRating[indexPath.row]
             cell.coachImage.layer.cornerRadius = cell.coachImage.frame.size.width / 2
             cell.coachImage.clipsToBounds = true
             cell.coachLabelGame.adjustsFontSizeToFitWidth = true
