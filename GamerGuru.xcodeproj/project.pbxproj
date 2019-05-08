@@ -10,6 +10,9 @@
 		1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */; };
 		1CEA6CFC228175860008EAEB /* CoachListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6CFB228175860008EAEB /* CoachListCell.swift */; };
 		1CEA6CFE228176060008EAEB /* CoachListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6CFD228176060008EAEB /* CoachListViewController.swift */; };
+		1CEA6D0022827A6E0008EAEB /* SelectGameCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6CFF22827A6E0008EAEB /* SelectGameCoachViewController.swift */; };
+		1CEA6D0222828DE10008EAEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6D0122828DE10008EAEB /* ProfileViewController.swift */; };
+		1CEA6D042282C07A0008EAEB /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6D032282C07A0008EAEB /* LessonTableViewCell.swift */; };
 		1CF35E58227C24D3003E17F4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */; };
 		589E72A322826A9B0025FE60 /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E72A222826A9B0025FE60 /* GameCollectionViewCell.swift */; };
 		589E72A522826B8D0025FE60 /* GuideTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E72A422826B8D0025FE60 /* GuideTopicTableViewCell.swift */; };
@@ -51,6 +54,9 @@
 		1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
 		1CEA6CFB228175860008EAEB /* CoachListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachListCell.swift; sourceTree = "<group>"; };
 		1CEA6CFD228176060008EAEB /* CoachListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachListViewController.swift; sourceTree = "<group>"; };
+		1CEA6CFF22827A6E0008EAEB /* SelectGameCoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameCoachViewController.swift; sourceTree = "<group>"; };
+		1CEA6D0122828DE10008EAEB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1CEA6D032282C07A0008EAEB /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		589E72A222826A9B0025FE60 /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		589E72A422826B8D0025FE60 /* GuideTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTopicTableViewCell.swift; sourceTree = "<group>"; };
@@ -153,6 +159,9 @@
 				1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */,
 				1CEA6CFB228175860008EAEB /* CoachListCell.swift */,
 				1CEA6CFD228176060008EAEB /* CoachListViewController.swift */,
+				1CEA6CFF22827A6E0008EAEB /* SelectGameCoachViewController.swift */,
+				1CEA6D0122828DE10008EAEB /* ProfileViewController.swift */,
+				1CEA6D032282C07A0008EAEB /* LessonTableViewCell.swift */,
 			);
 			path = GamerGuru;
 			sourceTree = "<group>";
@@ -312,14 +321,17 @@
 				1CF35E58227C24D3003E17F4 /* ImageCollectionViewCell.swift in Sources */,
 				589E72AD228271500025FE60 /* CosmosDistrib.swift in Sources */,
 				1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */,
+				1CEA6D042282C07A0008EAEB /* LessonTableViewCell.swift in Sources */,
 				589E72A522826B8D0025FE60 /* GuideTopicTableViewCell.swift in Sources */,
 				9579EC0F2276EBA900828865 /* AppDelegate.swift in Sources */,
+				1CEA6D0222828DE10008EAEB /* ProfileViewController.swift in Sources */,
 				589E72A922826C3F0025FE60 /* GuideContentDetailViewController.swift in Sources */,
 				1CEA6CFC228175860008EAEB /* CoachListCell.swift in Sources */,
 				95596CF5227FD21F00B43223 /* RegisterSuccessViewController.swift in Sources */,
 				95C75A77227A9FF20034B36A /* LoginViewController.swift in Sources */,
 				589E72AB22826CC70025FE60 /* PopUpViewController.swift in Sources */,
 				589E72A722826BA10025FE60 /* GuideContentViewController.swift in Sources */,
+				1CEA6D0022827A6E0008EAEB /* SelectGameCoachViewController.swift in Sources */,
 				9579EC112276EBA900828865 /* HomeViewController.swift in Sources */,
 				1CEA6CFE228176060008EAEB /* CoachListViewController.swift in Sources */,
 			);

@@ -12,10 +12,12 @@ class CoachListViewController: UIViewController {
     var coachImageArr = ["coach","coach3","coach2","coach3","coach4"]
     var coachName = ["Fabian Vieri", "Hedianto", "Victor Wijaya", "Farico Novenio", "Chia Pingky"]
     var coachOrigin = ["flag1","flag2","flag3","flag2","flag3"]
+    @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        searchBar.setBackgroundImage(UIImage(), for: .top, barMetrics: .default)
+        searchBar.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
 
 }
@@ -42,4 +44,7 @@ extension CoachListViewController: UITableViewDelegate, UITableViewDataSource {
         return 150.0
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Select a Guru"
+    }
 }

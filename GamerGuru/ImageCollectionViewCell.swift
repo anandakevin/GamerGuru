@@ -16,4 +16,5 @@ class ImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var coachLabelName: UILabel!
     @IBOutlet weak var coachRating: CosmosView!
+    @IBOutlet weak var gameImageCoach: UIImageView!
 }
