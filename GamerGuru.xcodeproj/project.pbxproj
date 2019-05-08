@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */; };
 		95596CF5227FD21F00B43223 /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95596CF4227FD21F00B43223 /* RegisterSuccessViewController.swift */; };
+		95596CF7227FF44200B43223 /* CoachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95596CF6227FF44200B43223 /* CoachDetailViewController.swift */; };
+		95596CF92280180B00B43223 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95596CF82280180A00B43223 /* CosmosDistrib.swift */; };
 		9579EC0F2276EBA900828865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC0E2276EBA900828865 /* AppDelegate.swift */; };
 		9579EC112276EBA900828865 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC102276EBA900828865 /* HomeViewController.swift */; };
 		9579EC132276EBA900828865 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC122276EBA900828865 /* GuideViewController.swift */; };
@@ -17,7 +19,15 @@
 		9579EC1B2276EBAA00828865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9579EC192276EBAA00828865 /* LaunchScreen.storyboard */; };
 		9579EC262276EBAA00828865 /* GamerGuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC252276EBAA00828865 /* GamerGuruTests.swift */; };
 		9579EC312276EBAA00828865 /* GamerGuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579EC302276EBAA00828865 /* GamerGuruUITests.swift */; };
+		957B13532282B77300CA7AB3 /* CoachReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B13522282B77300CA7AB3 /* CoachReviewTableViewCell.swift */; };
+		957B13552282C81100CA7AB3 /* CoachHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B13542282C81100CA7AB3 /* CoachHeaderTableViewCell.swift */; };
+		957F65E5228122C3009A9100 /* ReviewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F65E4228122C3009A9100 /* ReviewDetailViewController.swift */; };
+		957F65F322816BB4009A9100 /* UserReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F65F222816BB4009A9100 /* UserReviewTableViewCell.swift */; };
+		957F65F522816D16009A9100 /* UserReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F65F422816D16009A9100 /* UserReviewViewController.swift */; };
+		957F65F7228177FF009A9100 /* UserReviewHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F65F6228177FF009A9100 /* UserReviewHeadTableViewCell.swift */; };
+		958C2E772281D50C000640D4 /* CoachAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C2E762281D50C000640D4 /* CoachAboutTableViewCell.swift */; };
 		95C75A77227A9FF20034B36A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C75A76227A9FF20034B36A /* LoginViewController.swift */; };
+		95F483B2228326F50019CA79 /* CoachAchievementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F483B1228326F50019CA79 /* CoachAchievementsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,8 @@
 /* Begin PBXFileReference section */
 		1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
 		95596CF4227FD21F00B43223 /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		95596CF6227FF44200B43223 /* CoachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDetailViewController.swift; sourceTree = "<group>"; };
+		95596CF82280180A00B43223 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDistrib.swift; path = ../../../Downloads/CosmosDistrib.swift; sourceTree = "<group>"; };
 		9579EC0B2276EBA900828865 /* GamerGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamerGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9579EC0E2276EBA900828865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9579EC102276EBA900828865 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +66,15 @@
 		9579EC2C2276EBAA00828865 /* GamerGuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamerGuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9579EC302276EBAA00828865 /* GamerGuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamerGuruUITests.swift; sourceTree = "<group>"; };
 		9579EC322276EBAA00828865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957B13522282B77300CA7AB3 /* CoachReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachReviewTableViewCell.swift; sourceTree = "<group>"; };
+		957B13542282C81100CA7AB3 /* CoachHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		957F65E4228122C3009A9100 /* ReviewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailViewController.swift; sourceTree = "<group>"; };
+		957F65F222816BB4009A9100 /* UserReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewTableViewCell.swift; sourceTree = "<group>"; };
+		957F65F422816D16009A9100 /* UserReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewViewController.swift; sourceTree = "<group>"; };
+		957F65F6228177FF009A9100 /* UserReviewHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewHeadTableViewCell.swift; sourceTree = "<group>"; };
+		958C2E762281D50C000640D4 /* CoachAboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAboutTableViewCell.swift; sourceTree = "<group>"; };
 		95C75A76227A9FF20034B36A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		95F483B1228326F50019CA79 /* CoachAchievementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAchievementsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +131,16 @@
 				1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */,
 				95596CF4227FD21F00B43223 /* RegisterSuccessViewController.swift */,
 				9579EC142276EBA900828865 /* Main.storyboard */,
+				95596CF6227FF44200B43223 /* CoachDetailViewController.swift */,
+				957B13542282C81100CA7AB3 /* CoachHeaderTableViewCell.swift */,
+				958C2E762281D50C000640D4 /* CoachAboutTableViewCell.swift */,
+				957B13522282B77300CA7AB3 /* CoachReviewTableViewCell.swift */,
+				95F483B1228326F50019CA79 /* CoachAchievementsTableViewCell.swift */,
+				957F65E4228122C3009A9100 /* ReviewDetailViewController.swift */,
+				957F65F422816D16009A9100 /* UserReviewViewController.swift */,
+				957F65F6228177FF009A9100 /* UserReviewHeadTableViewCell.swift */,
+				957F65F222816BB4009A9100 /* UserReviewTableViewCell.swift */,
+				95596CF82280180A00B43223 /* CosmosDistrib.swift */,
 				95C75A76227A9FF20034B36A /* LoginViewController.swift */,
 				9579EC172276EBAA00828865 /* Assets.xcassets */,
 				9579EC192276EBAA00828865 /* LaunchScreen.storyboard */,
@@ -268,11 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957B13552282C81100CA7AB3 /* CoachHeaderTableViewCell.swift in Sources */,
+				957B13532282B77300CA7AB3 /* CoachReviewTableViewCell.swift in Sources */,
+				958C2E772281D50C000640D4 /* CoachAboutTableViewCell.swift in Sources */,
+				957F65F522816D16009A9100 /* UserReviewViewController.swift in Sources */,
 				9579EC132276EBA900828865 /* GuideViewController.swift in Sources */,
 				1C8A3CF12276F2B6003F9FFE /* CoachViewController.swift in Sources */,
 				9579EC0F2276EBA900828865 /* AppDelegate.swift in Sources */,
+				95596CF92280180B00B43223 /* CosmosDistrib.swift in Sources */,
+				957F65F7228177FF009A9100 /* UserReviewHeadTableViewCell.swift in Sources */,
+				95596CF7227FF44200B43223 /* CoachDetailViewController.swift in Sources */,
 				95596CF5227FD21F00B43223 /* RegisterSuccessViewController.swift in Sources */,
+				957F65E5228122C3009A9100 /* ReviewDetailViewController.swift in Sources */,
+				95F483B2228326F50019CA79 /* CoachAchievementsTableViewCell.swift in Sources */,
 				95C75A77227A9FF20034B36A /* LoginViewController.swift in Sources */,
+				957F65F322816BB4009A9100 /* UserReviewTableViewCell.swift in Sources */,
 				9579EC112276EBA900828865 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

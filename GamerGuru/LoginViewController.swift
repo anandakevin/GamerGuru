@@ -16,6 +16,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var testImage: UIImageView!
     @IBOutlet weak var loginPage: UIView!
     @IBOutlet weak var registerPage: UIView!
+    @IBOutlet weak var maleButton: UIButton!
+    @IBOutlet weak var femaleButton: UIButton!
+    @IBAction func maleButtonChanger(_ sender: UIButton) {
+        maleButton.isSelected = true
+        femaleButton.isSelected = false
+    }
+    @IBAction func femaleButtonChanger(_ sender: UIButton) {
+        maleButton.isSelected = false
+        femaleButton.isSelected = true
+    }
     @IBAction func changeSection(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             login()
@@ -56,7 +66,6 @@ class LoginViewController: UIViewController {
         }
         userIcon?.image = userImage
         passIcon?.image = passImage
-        passIcon?.contentMode = .scaleAspectFit
         
         // Do any additional setup after loading the view.
     }
