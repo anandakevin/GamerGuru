@@ -62,7 +62,7 @@ class CoachViewController: UIViewController {
         
         findCoachButton.layer.cornerRadius = 5
         findCoachButton.layer.masksToBounds = true
-        noCoachView.isHidden = true
+        //noCoachView.isHidden = true
         
         let anotherBorder = CALayer()
         anotherBorder.frame = CGRect(x: 0, y: coachNameView.frame.size.height + 10, width: coachNameView.frame.size.width, height: 1.0)
