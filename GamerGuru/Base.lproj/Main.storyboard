@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CoE-Ey-7YH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4iL-qW-sNJ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -196,6 +196,7 @@
                                                     <outlet property="coachLabelName" destination="cQF-4J-MjB" id="K8w-5Y-uAj"/>
                                                     <outlet property="coachRating" destination="WQp-6d-aMA" id="YLV-zO-kPI"/>
                                                     <outlet property="mainView" destination="Ip3-gW-wmr" id="YOu-yt-NWi"/>
+                                                    <segue destination="FB1-cn-5e9" kind="show" id="5yg-cE-m62"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -971,6 +972,7 @@
                                             <outlet property="coachOrigin" destination="CR5-QR-Ell" id="NG5-Gk-fA4"/>
                                             <outlet property="coachPicture" destination="5WV-z8-KNv" id="TK3-ho-jir"/>
                                             <outlet property="labelCoachName" destination="pkE-Xz-WQq" id="IWX-Nb-b4a"/>
+                                            <segue destination="FB1-cn-5e9" kind="show" id="Qw2-ZG-4vf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1300,7 +1302,7 @@
             </objects>
             <point key="canvasLocation" x="4755" y="3"/>
         </scene>
-        <!--Guru Detail-->
+        <!--Coach Detail View Controller-->
         <scene sceneID="ONZ-Z1-eMx">
             <objects>
                 <viewController id="FB1-cn-5e9" customClass="CoachDetailViewController" customModule="GamerGuru" customModuleProvider="target" sceneMemberID="viewController">
@@ -1309,7 +1311,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z7E-DN-K2r" userLabel="TableView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1228"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1179"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="200" id="G0g-Hq-Wgt" customClass="CoachHeaderTableViewCell" customModule="GamerGuru" customModuleProvider="target">
@@ -1722,9 +1724,6 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
                                                     <rect key="frame" x="357" y="10" width="47" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <state key="normal" title="See All"/>
-                                                    <connections>
-                                                        <segue destination="8Ec-1f-tsS" kind="show" id="Zj6-gu-gky"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1757,7 +1756,7 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y3Y-b0-D69"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Guru Detail" id="qaq-sY-wUd"/>
+                    <navigationItem key="navigationItem" id="qaq-sY-wUd"/>
                     <size key="freeformSize" width="414" height="1350"/>
                     <connections>
                         <outlet property="tableView" destination="z7E-DN-K2r" id="Kew-k5-Q2O"/>
@@ -1772,11 +1771,11 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
             <objects>
                 <viewController id="OlX-e6-dry" userLabel="User Review Controller" customClass="UserReviewViewController" customModule="GamerGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IB2-fp-MD6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xNu-9W-Yy0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="609"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
@@ -1962,11 +1961,11 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
             <objects>
                 <viewController id="MUV-39-dDT" userLabel="Review Detail View Controller" customClass="ReviewDetailViewController" customModule="GamerGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nyO-mB-rj3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zn-9C-wkh">
-                                <rect key="frame" x="5" y="93" width="404" height="150"/>
+                                <rect key="frame" x="5" y="145" width="404" height="150"/>
                                 <subviews>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-HD-qqy" customClass="CosmosView" customModule="GamerGuru" customModuleProvider="target">
                                         <rect key="frame" x="5" y="5" width="120" height="20"/>
@@ -2032,21 +2031,6 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAW-L8-0X6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5462.3188405797109" y="555.80357142857144"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wXg-8I-0Se">
-            <objects>
-                <viewController id="8Ec-1f-tsS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yGF-s2-b8Y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Pdi-7X-fag"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6en-rR-ZTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6178" y="906"/>
         </scene>
         <!--Welcome Page Controller-->
         <scene sceneID="9g1-5i-1g5">
@@ -2506,8 +2490,8 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
                     </view>
                     <connections>
                         <outlet property="femaleButton" destination="gtl-4m-Le9" id="550-5h-kz8"/>
-                        <outlet property="maleButton" destination="09A-Nq-PFs" id="dXr-TT-aaz"/>
                         <outlet property="joinButton" destination="CFD-HH-wTJ" id="t6W-Tx-KlC"/>
+                        <outlet property="maleButton" destination="09A-Nq-PFs" id="dXr-TT-aaz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ji-26-QRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2582,8 +2566,7 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVi-8H-19Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3782.608695652174" y="866.51785714285711"/>
-            <point key="canvasLocation" x="-551" y="498"/>
+            <point key="canvasLocation" x="3981" y="668"/>
         </scene>
         <!--Select Game Coach View Controller-->
         <scene sceneID="M5R-eI-XKl">
@@ -2685,27 +2668,25 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
     <resources>
         <image name="Checkbox" width="25" height="25"/>
         <image name="UnCheckbox" width="25" height="25"/>
-        <image name="coach1" width="702" height="932"/>
-        <image name="englishNationality" width="600" height="600"/>
-        <image name="facebook-sign-in-button-3" width="266" height="100"/>
-        <image name="first" width="30" height="30"/>
-        <image name="fortnite" width="420" height="420"/>
-        <image name="second" width="30" height="30"/>
-        <image name="successBtn" width="100" height="100"/>
         <image name="book" width="36" height="36"/>
         <image name="chat" width="65" height="65"/>
         <image name="coach" width="702" height="934"/>
+        <image name="coach1" width="702" height="932"/>
         <image name="coach_bg" width="2132" height="1500"/>
         <image name="default_icon" width="715" height="715"/>
+        <image name="englishNationality" width="600" height="600"/>
         <image name="facebook-sign-in-button-3" width="266" height="100"/>
         <image name="flag2" width="512" height="512"/>
+        <image name="fortnite" width="420" height="420"/>
         <image name="head1" width="30" height="30"/>
         <image name="homebar" width="32" height="32"/>
         <image name="loggame4" width="512" height="512"/>
+        <image name="successBtn" width="100" height="100"/>
         <image name="testImage" width="500" height="304"/>
         <image name="user" width="65" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="V3d-mk-fag"/>
+        <segue reference="5yg-cE-m62"/>
     </inferredMetricsTieBreakers>
 </document>
