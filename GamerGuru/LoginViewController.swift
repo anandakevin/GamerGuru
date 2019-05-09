@@ -19,6 +19,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var segmentLogin: UISegmentedControl!
     @IBOutlet weak var joinButton: UIButton!
     @IBOutlet weak var registerPage: UIView!
+    @IBOutlet weak var maleButton: UIButton!
+    @IBOutlet weak var femaleButton: UIButton!
+    @IBAction func maleButtonChanger(_ sender: UIButton) {
+        maleButton.isSelected = true
+        femaleButton.isSelected = false
+    }
+    @IBAction func femaleButtonChanger(_ sender: UIButton) {
+        maleButton.isSelected = false
+        femaleButton.isSelected = true
+    }
     @IBAction func changeSection(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             login()
@@ -66,7 +76,6 @@ class LoginViewController: UIViewController {
         loginButton?.layer.masksToBounds = true
         joinButton?.layer.cornerRadius = 5
         joinButton?.layer.masksToBounds = true
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
