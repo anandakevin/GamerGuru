@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passIcon: UIImageView!
     @IBOutlet weak var testImage: UIImageView!
     @IBOutlet weak var loginPage: UIView!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var segmentLogin: UISegmentedControl!
+    @IBOutlet weak var joinButton: UIButton!
     @IBOutlet weak var registerPage: UIView!
     @IBOutlet weak var maleButton: UIButton!
     @IBOutlet weak var femaleButton: UIButton!
@@ -52,11 +55,13 @@ class LoginViewController: UIViewController {
     func login() {
         loginPage.alpha = 1
         registerPage.alpha = 0
+        
     }
     
     func register() {
         loginPage.alpha = 0
         registerPage.alpha = 1
+        
     }
     
     override func viewDidLoad() {
@@ -66,9 +71,13 @@ class LoginViewController: UIViewController {
         }
         userIcon?.image = userImage
         passIcon?.image = passImage
-        
-        // Do any additional setup after loading the view.
+        passIcon?.contentMode = .scaleAspectFit
+        loginButton?.layer.cornerRadius = 5
+        loginButton?.layer.masksToBounds = true
+        joinButton?.layer.cornerRadius = 5
+        joinButton?.layer.masksToBounds = true
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         
     }
