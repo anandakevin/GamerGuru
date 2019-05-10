@@ -23,10 +23,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
+//        tabBarController?.delegate = self
     }
     
     func configView() {
@@ -35,12 +37,17 @@ class HomeViewController: UIViewController {
         profilePicture.image = UIImage(named: "default_icon")
         profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
         profilePicture.layer.borderWidth = 0
-        //profilePicture.layer.backgroundColor = UIColor.lightGray.cgColor
+        //profilePic/Users/chiapingky/Documents/GamerGuru/GamerGuru.xcodeprojture.layer.backgroundColor = UIColor.lightGray.cgColor
         profilePicture.clipsToBounds = true
+        username.text = "User"
         
         // profile button
         profileButton.layer.cornerRadius = 5
         profileButton.layer.masksToBounds = true
+        
+        // logout button
+        logoutButton.layer.cornerRadius = 5
+        logoutButton.layer.masksToBounds = true
         
         // login button
         loginButton.layer.cornerRadius = 5
@@ -53,9 +60,9 @@ class HomeViewController: UIViewController {
         registerButton.isHidden = true
         
         // line break 1
-        let border = CALayer()
-        border.frame = CGRect(x: 20, y: borderView.frame.size.height + 39, width: borderView.frame.size.width - 40, height: 1)
-        border.backgroundColor = UIColor.black.cgColor
+//        let border = CALayer()
+//        border.frame = CGRect(x: 20, y: borderView.frame.size.height + 39, width: borderView.frame.size.width - 40, height: 1)
+//        border.backgroundColor = UIColor.black.cgColor
         //borderView.layer.addSublayer(border)
         
         // line break 2
@@ -63,7 +70,15 @@ class HomeViewController: UIViewController {
         anotherBorder.frame = CGRect(x: 0, y: profileView.frame.size.height + 30, width: profileView.frame.width, height: 1)
         anotherBorder.backgroundColor = UIColor.lightGray.cgColor
         profileView.layer.addSublayer(anotherBorder)
-        
+    }
+    @IBOutlet weak var username: UILabel!
+    
+    @IBAction func logout(_ sender: UIButton) {
+        profileButton.isHidden = true
+        logoutButton.isHidden = true
+        registerButton.isHidden = false
+        loginButton.isHidden = false
+        username.text = "Guest"
     }
     
 }
@@ -76,7 +91,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == gameColView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! ImageCollectionViewCell
-            cell.gameImage.setImage(UIImage(named: gameImage[indexPath.row]), for: .normal)
+            cell.gameImage.image=UIImage(named: gameImage[indexPath.row])
             cell.gameImage.layer.cornerRadius = 10.0
             cell.gameImage.layer.masksToBounds = true
             cell.layer.shadowColor = UIColor.black.cgColor
@@ -109,5 +124,42 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 && collectionView == gameColView{
+            performSegue(withIdentifier: "selectGame", sender: self)
+        }
+        else if collectionView == gameColView{
+            let alert = UIAlertController(title: "Content Coming Soon", message: "Content not available yet, but will be available soon.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }
 
+//extension HomeViewController:UITabBarControllerDelegate {
+//    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+//
+//        print(viewController)
+//        if let viewController = viewController as? UINavigationController {
+//            if viewController.topViewController is CoachViewController {
+//                //print("masuk")
+//                let alert = UIAlertController(title: "Access Denied", message: "Login to use this feature", preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//                return false
+//            }
+//
+//        }
+//
+////        if let viewController = viewController as? UINavigationController {
+////            if viewController.topViewController is GuideViewController {
+////                print("Guide")
+////            }
+////        }
+////
+////        if let viewController =  viewController as? HomeViewController {
+////            print("home")
+////        }
+//        return true
+//    }
+//}

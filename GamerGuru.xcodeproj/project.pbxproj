@@ -14,6 +14,7 @@
 		1CEA6D0222828DE10008EAEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6D0122828DE10008EAEB /* ProfileViewController.swift */; };
 		1CEA6D042282C07A0008EAEB /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEA6D032282C07A0008EAEB /* LessonTableViewCell.swift */; };
 		1CF35E58227C24D3003E17F4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */; };
+		5861D2712283D224005C26F6 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5861D2702283D224005C26F6 /* SplashScreenViewController.swift */; };
 		589E72A322826A9B0025FE60 /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E72A222826A9B0025FE60 /* GameCollectionViewCell.swift */; };
 		589E72A522826B8D0025FE60 /* GuideTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E72A422826B8D0025FE60 /* GuideTopicTableViewCell.swift */; };
 		589E72A722826BA10025FE60 /* GuideContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E72A622826BA10025FE60 /* GuideContentViewController.swift */; };
@@ -67,6 +68,7 @@
 		1CEA6D0122828DE10008EAEB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1CEA6D032282C07A0008EAEB /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		5861D2702283D224005C26F6 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		589E72A222826A9B0025FE60 /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		589E72A422826B8D0025FE60 /* GuideTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTopicTableViewCell.swift; sourceTree = "<group>"; };
 		589E72A622826BA10025FE60 /* GuideContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideContentViewController.swift; sourceTree = "<group>"; };
@@ -127,9 +129,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5861D26F2283C59E005C26F6 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				958C2E762281D50C000640D4 /* CoachAboutTableViewCell.swift */,
+				957B13542282C81100CA7AB3 /* CoachHeaderTableViewCell.swift */,
+				95596CF6227FF44200B43223 /* CoachDetailViewController.swift */,
+				1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */,
+				957B13522282B77300CA7AB3 /* CoachReviewTableViewCell.swift */,
+				95F483B1228326F50019CA79 /* CoachAchievementsTableViewCell.swift */,
+				1CEA6CFB228175860008EAEB /* CoachListCell.swift */,
+				1CEA6CFD228176060008EAEB /* CoachListViewController.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
 		589E72AE2282726E0025FE60 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
+				1CEA6CFF22827A6E0008EAEB /* SelectGameCoachViewController.swift */,
 				9579EC122276EBA900828865 /* GuideViewController.swift */,
 				589E72A622826BA10025FE60 /* GuideContentViewController.swift */,
 				589E72A822826C3E0025FE60 /* GuideContentDetailViewController.swift */,
@@ -163,18 +181,13 @@
 		9579EC0D2276EBA900828865 /* GamerGuru */ = {
 			isa = PBXGroup;
 			children = (
+				5861D26F2283C59E005C26F6 /* Coach */,
 				589E72AE2282726E0025FE60 /* Guide */,
+				9579EC142276EBA900828865 /* Main.storyboard */,
 				9579EC0E2276EBA900828865 /* AppDelegate.swift */,
 				589E72AC2282714F0025FE60 /* CosmosDistrib.swift */,
 				9579EC102276EBA900828865 /* HomeViewController.swift */,
-				1C8A3CF02276F2B6003F9FFE /* CoachViewController.swift */,
 				95596CF4227FD21F00B43223 /* RegisterSuccessViewController.swift */,
-				9579EC142276EBA900828865 /* Main.storyboard */,
-				95596CF6227FF44200B43223 /* CoachDetailViewController.swift */,
-				957B13542282C81100CA7AB3 /* CoachHeaderTableViewCell.swift */,
-				958C2E762281D50C000640D4 /* CoachAboutTableViewCell.swift */,
-				957B13522282B77300CA7AB3 /* CoachReviewTableViewCell.swift */,
-				95F483B1228326F50019CA79 /* CoachAchievementsTableViewCell.swift */,
 				957F65E4228122C3009A9100 /* ReviewDetailViewController.swift */,
 				957F65F422816D16009A9100 /* UserReviewViewController.swift */,
 				957F65F6228177FF009A9100 /* UserReviewHeadTableViewCell.swift */,
@@ -183,12 +196,10 @@
 				95C75A76227A9FF20034B36A /* LoginViewController.swift */,
 				9579EC172276EBAA00828865 /* Assets.xcassets */,
 				9579EC192276EBAA00828865 /* LaunchScreen.storyboard */,
+				5861D2702283D224005C26F6 /* SplashScreenViewController.swift */,
 				9579EC1C2276EBAA00828865 /* Info.plist */,
 				589E72AF228272CF0025FE60 /* logo1.jpg */,
 				1CF35E57227C24D3003E17F4 /* ImageCollectionViewCell.swift */,
-				1CEA6CFB228175860008EAEB /* CoachListCell.swift */,
-				1CEA6CFD228176060008EAEB /* CoachListViewController.swift */,
-				1CEA6CFF22827A6E0008EAEB /* SelectGameCoachViewController.swift */,
 				1CEA6D0122828DE10008EAEB /* ProfileViewController.swift */,
 				1CEA6D032282C07A0008EAEB /* LessonTableViewCell.swift */,
 			);
@@ -347,6 +358,7 @@
 			files = (
 				957B13552282C81100CA7AB3 /* CoachHeaderTableViewCell.swift in Sources */,
 				957B13532282B77300CA7AB3 /* CoachReviewTableViewCell.swift in Sources */,
+				5861D2712283D224005C26F6 /* SplashScreenViewController.swift in Sources */,
 				958C2E772281D50C000640D4 /* CoachAboutTableViewCell.swift in Sources */,
 				957F65F522816D16009A9100 /* UserReviewViewController.swift in Sources */,
 				9579EC132276EBA900828865 /* GuideViewController.swift in Sources */,
@@ -554,7 +566,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.entertainment.GamerGuru123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entertainment.GamerGuru12345;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -574,7 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.entertainment.GamerGuru123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entertainment.GamerGuru12345;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
