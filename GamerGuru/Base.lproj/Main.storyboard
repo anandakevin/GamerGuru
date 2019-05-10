@@ -1797,7 +1797,7 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
             <objects>
                 <viewController id="OlX-e6-dry" userLabel="User Review Controller" customClass="UserReviewViewController" customModule="GamerGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IB2-fp-MD6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xNu-9W-Yy0">
@@ -2058,7 +2058,7 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
             <objects>
                 <viewController id="MUV-39-dDT" userLabel="Review Detail View Controller" customClass="ReviewDetailViewController" customModule="GamerGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nyO-mB-rj3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zn-9C-wkh">
@@ -2806,6 +2806,7 @@ killer analogies to help me see the game differently. Great coach. Knows his stu
         <image name="englishNationality" width="600" height="600"/>
         <image name="facebook-sign-in-button-3" width="266" height="100"/>
         <image name="flag2" width="512" height="512"/>
+        <image name="fortnite" width="420" height="420"/>
         <image name="head1" width="30" height="30"/>
         <image name="homebar" width="32" height="32"/>
         <image name="successBtn" width="100" height="100"/>
