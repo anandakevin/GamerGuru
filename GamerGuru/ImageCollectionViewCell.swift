@@ -11,7 +11,7 @@ import UIKit
 class ImageCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var coachImage: UIImageView!
-    @IBOutlet weak var gameImage: UIButton!
+    @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var coachLabelGame: UILabel!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var coachLabelName: UILabel!
