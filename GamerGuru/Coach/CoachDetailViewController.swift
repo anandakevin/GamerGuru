@@ -35,6 +35,15 @@ class CoachDetailViewController: UIViewController, UITableViewDelegate, UITableV
         return 4
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "unwindToCoach" {
+            if let destSegue = segue.destination as? CoachViewController {
+                destSegue.noCoachView.isHidden = true
+                destSegue.coachNameLabel.text = "Fabian 'Tayo' Vieri"
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:

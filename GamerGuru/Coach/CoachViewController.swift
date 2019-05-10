@@ -22,9 +22,14 @@ class CoachViewController: UIViewController {
     @IBOutlet weak var coachNameView: UIView!
     @IBOutlet weak var reportButton: UIButton!
     
+    @IBAction func unwindToCoach(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+    }
+    
     @IBAction func chatClick(_ sender: UIButton) {
-        noCoachView.isHidden = false
-        coachNameLabel.text = "No coach"
+        //noCoachView.isHidden = false
+        
     }
     
     @IBAction func coachDetailClick(_ sender: UIButton) {
@@ -47,6 +52,7 @@ class CoachViewController: UIViewController {
     }
     
     func configView() {
+        coachNameLabel.text = "No coach"
         progressLesson.transform = progressLesson.transform.scaledBy(x: 1, y: 10)
         coachNameLabel.adjustsFontSizeToFitWidth = true
         
